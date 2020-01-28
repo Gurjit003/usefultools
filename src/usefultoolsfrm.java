@@ -1,4 +1,4 @@
-/*
+ /*
  * Gurjit Singh
  * Friday December 27th - 2019
  * This program displays the useful tools
@@ -13,7 +13,9 @@ import javax.swing.JOptionPane;
  */
 public class usefultoolsfrm extends javax.swing.JFrame {
     
-    // TIC TAC TOE Declarations
+    /**
+     * TIC TAC TOE Declarations
+     */
     private String startGame = "X"; 
     private int xCount = 0;
     private int oCount = 0;
@@ -25,7 +27,9 @@ public class usefultoolsfrm extends javax.swing.JFrame {
         initComponents();
     }
     
-    // TIC TAC TOE Methods for switching between player X and O
+    /**
+     * TIC TAC TOE Methods for switching between player X and O
+     */
     private void choose_a_Player() {
         if (startGame.equalsIgnoreCase("X")) {
             startGame = "O";
@@ -35,7 +39,9 @@ public class usefultoolsfrm extends javax.swing.JFrame {
         }
     }
     
-    // TIC TAC TOE Method for determining the winner
+    /**
+     * TIC TAC TOE Method for determining the winner
+     */
     private void winningGame() {
         String b1 = btn31.getText();
         String b2 = btn32.getText();
